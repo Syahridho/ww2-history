@@ -19,9 +19,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full z-50 justify-between items-center md:py-4 md:flex md:container md:mx-auto">
-      <div className="px-4 py-2 flex justify-between items-center shadow-sm md:shadow-none">
-        <h1 className="font-semibold">Histori</h1>
+    <div className="w-full z-50 justify-between items-center md:py-4 md:flex md:mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+      <div className="px-6 py-2 flex justify-between items-center shadow-sm md:shadow-none">
+        <h1 className="font-semibold text-xl">Histori</h1>
         <button className="p-2 md:hidden" onClick={() => setNavOn(!navOn)}>
           {navOn ? (
             <FaXmark className="w-5 h-5" />
