@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        hero: "url('./src/assets/hero.webp')",
+      },
+      animation: {
+        "bounce-slow": "bounce 4s linear infinite",
+      },
     },
   },
   plugins: [],
