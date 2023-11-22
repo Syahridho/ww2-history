@@ -1,9 +1,6 @@
+import CardLeaderList from "../components/CardLeaderList";
 import Navbar from "../components/Navbar";
 import { FiArrowDownCircle } from "react-icons/fi";
-
-import jerman from "./../assets/leader/jerman.png";
-import jepang from "./../assets/leader/jepang.png";
-import italia from "./../assets/leader/italia.png";
 
 const Home = () => {
   return (
@@ -39,71 +36,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
-        <h1 className="font-semibold text-3xl text-center mb-8">Pemimpin</h1>
-        <div className="px-4 flex gap-4 overflow-hidden overflow-x-auto md:justify-center">
-          <div className="border p-4 h-64 rounded">
-            <div className="h-28 w-28 overflow-hidden border rounded mb-2">
-              <img src={jerman} alt="jerman" className="" />
-            </div>
-            <h1 className="text-md font-medium">Adolf Hitler</h1>
-            <p className="mb-4">Nazi</p>
-            <button className="bg-stone-800 px-4 py-1 text-white rounded w-full">
-              Lihat
-            </button>
-          </div>
-          <div className="border p-4 h-64 rounded">
-            <div className="h-28 w-28 overflow-hidden border rounded mb-2">
-              <img src={jepang} alt="jepang" className="" />
-            </div>
-            <h1 className="text-md font-medium">Adolf Hitler</h1>
-            <p className="mb-4">Nazi</p>
-            <button className="bg-stone-800 px-4 py-1 text-white rounded w-full">
-              Lihat
-            </button>
-          </div>
-          <div className="border p-4 h-64 rounded">
-            <div className="h-28 w-28 overflow-hidden border rounded mb-2">
-              <img src={italia} alt="italia" className="" />
-            </div>
-            <h1 className="text-md font-medium">Adolf Hitler</h1>
-            <p className="mb-4">Nazi</p>
-            <button className="bg-stone-800 px-4 py-1 text-white rounded w-full">
-              Lihat
-            </button>
-          </div>
-          <div className="border p-4 h-64 rounded">
-            <div className="h-28 w-28 overflow-hidden border rounded mb-2">
-              <img src={italia} alt="italia" className="" />
-            </div>
-            <h1 className="text-md font-medium">Adolf Hitler</h1>
-            <p className="mb-4">Nazi</p>
-            <button className="bg-stone-800 px-4 py-1 text-white rounded w-full">
-              Lihat
-            </button>
-          </div>
-          <div className="border p-4 h-64 rounded">
-            <div className="h-28 w-28 overflow-hidden border rounded mb-2">
-              <img src={italia} alt="italia" className="" />
-            </div>
-            <h1 className="text-md font-medium">Adolf Hitler</h1>
-            <p className="mb-4">Nazi</p>
-            <button className="bg-stone-800 px-4 py-1 text-white rounded w-full">
-              Lihat
-            </button>
-          </div>
-          <div className="border p-4 h-64 rounded">
-            <div className="h-28 w-28 overflow-hidden border rounded mb-2">
-              <img src={italia} alt="italia" className="" />
-            </div>
-            <h1 className="text-md font-medium">Adolf Hitler</h1>
-            <p className="mb-4">Nazi</p>
-            <button className="bg-stone-800 px-4 py-1 text-white rounded w-full">
-              Lihat
-            </button>
-          </div>
-        </div>
-      </div>
+      <CardLeaderList />
     </div>
   );
 };
