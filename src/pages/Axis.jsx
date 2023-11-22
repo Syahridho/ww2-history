@@ -1,7 +1,9 @@
+import Navbar from "../components/Navbar";
+
 const Axis = () => {
   return (
     <div>
-      <h1 className="underline">Hello</h1>
+      <Navbar />
     </div>
   );
 };

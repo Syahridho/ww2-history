@@ -8,7 +8,7 @@ const CardLeaderList = () => {
   return (
     <div className="mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
       <h1 className="font-semibold text-3xl text-center mb-8">Pemimpin</h1>
-      <div className="px-4 flex gap-4 overflow-hidden overflow-x-auto md:justify-center">
+      <div className="mx-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {leaders.map((leader) => (
           <CardLeader
             key={leader.id}
@@ -16,6 +16,7 @@ const CardLeaderList = () => {
             img={leader.img}
             name={leader.name}
             country={leader.country}
+            quotes={leader.quotes}
           />
         ))}
       </div>

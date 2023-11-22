@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [navOn, setNavOn] = useState(false);
@@ -35,28 +35,28 @@ const Navbar = () => {
           <div className="">
             <ul className="md:flex md:gap-10 lg:gap-20">
               <li className="ease-in-out transition-all duration-500">
-                <Link
+                <NavLink
                   className="block text-center py-3 transition duration-300 md:w-full md:py-0 hover:text-red-700 active:bg-slate-100"
                   to={"/"}
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="ease-in-out transition-all duration-500">
-                <Link
+                <NavLink
                   className="block text-center py-3 transition duration-300 md:w-full md:py-0 hover:text-red-700 active:bg-slate-100"
                   to={"/Axis"}
                 >
                   Axis
-                </Link>
+                </NavLink>
               </li>
               <li className="ease-in-out transition-all duration-500">
-                <Link
+                <NavLink
                   className="block text-center py-3 transition duration-300 md:w-full md:py-0 hover:text-red-700 active:bg-slate-100"
                   to={"/west"}
                 >
                   West
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
