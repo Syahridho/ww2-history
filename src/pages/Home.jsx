@@ -2,13 +2,21 @@ import { FiArrowDownCircle } from "react-icons/fi";
 import Navbar from "../components/Navbar";
 import CardLeaderList from "../components/CardLeaderList";
 import PeopleDead from "../components/PeopleDead";
+import History from "../components/History";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="relative">
       <Navbar />
       <div className="bg-hero bg-auto h-screen flex md:bg-cover">
-        <div className="px-6 my-auto text-white flex flex-col items-center ">
+        <div className="px-6 my-auto text-white flex flex-col items-center">
           <h1 className="font-semibold text-3xl">World War 2</h1>
           <p className="mt-2 mb-8 text-center">
             Konflik global yang berlangsung antara tahun 1939 dan 1945,
@@ -22,6 +30,7 @@ const Home = () => {
         </div>
       </div>
       <PeopleDead />
+      <History />
       <CardLeaderList />
     </div>
   );

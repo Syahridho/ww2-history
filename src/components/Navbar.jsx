@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-white text-slate-800 z-10 sticky w-full top-0 left-0 shadow">
+    <div className="bg-slate-50 text-slate-800 z-10 sticky w-full top-0 left-0 shadow">
       <div className="justify-between items-center md:py-4 md:flex md:mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
         <div className="px-6 py-2 flex justify-between items-center shadow-sm md:shadow-none">
           <h1 className="font-semibold text-xl">Histori</h1>
